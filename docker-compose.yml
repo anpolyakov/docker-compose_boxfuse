@@ -3,6 +3,8 @@ services:
     maven:
         image: maven:latest
         container_name: maven
+        volumes: 
+            - ${APPLICATION_ROOT_FOLDER}:/usr/src/mymaven
         links:
             - tomcat
 
