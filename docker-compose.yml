@@ -14,7 +14,7 @@ services:
         image: tomcat:latest
         container_name: tomcat
         volumes: 
-            - ${PWD}:/usr/local/tomcat/webapps
+            - ${PWD}/boxfuse-sample-java-war-hello:/usr/local/tomcat/webapps/
         ports: 
             - "8080:8080"
 
