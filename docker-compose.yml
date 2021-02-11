@@ -3,9 +3,9 @@ services:
     maven:
         image: maven:latest
         container_name: maven
-        volumes: 
-            - ${PWD}:/usr/src/mymaven
-        #command: bash -c "git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello /usr/src/mymaven"
+        #volumes: 
+            #- ${PWD}:/usr/src/mymaven
+        command: bash -c "git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello"
         links:
             - tomcat
 
