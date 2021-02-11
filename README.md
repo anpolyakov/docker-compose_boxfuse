@@ -1,8 +1,8 @@
 ## How to start this project?
 
-cd docker-compose_boxfuse
-chmod u+x start.sh
-./start.sh
+cd docker-compose_boxfuse  
+chmod u+x start.sh  
+./start.sh  
 
 ## How to check?
 
