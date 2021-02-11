@@ -3,8 +3,8 @@ services:
     maven:
         image: maven:latest
         container_name: maven
-    links:
-        - tomcat
+        links:
+            - tomcat
 
     tomcat:
         image: tomcat:latest
