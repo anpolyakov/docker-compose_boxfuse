@@ -13,6 +13,8 @@ services:
     tomcat:
         image: tomcat:latest
         container_name: tomcat
+        volumes: 
+            - ${PWD}:/usr/local/tomcat/webapps
         ports: 
             - "8080:8080"
 
